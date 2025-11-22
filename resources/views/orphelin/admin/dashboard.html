@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord Admin - Entraide Hooralayn</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <custom-admin-sidebar></custom-admin-sidebar>
+        
+        <!-- Main content -->
+        <div class="flex-1 overflow-auto">
+            <custom-admin-navbar></custom-admin-navbar>
+            
+            <main class="p-6">
+                <div class="mb-6">
+                    <h1 class="text-3xl font-bold">Tableau de bord</h1>
+                    <p class="text-gray-600">Bienvenue dans l'espace d'administration</p>
+                </div>
+                
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-gray-500 font-medium">Dons totaux</h3>
+                            <i data-feather="dollar-sign" class="text-blue-600"></i>
+                        </div>
+                        <p class="text-3xl font-bold mb-2">24,560€</p>
+                        <p class="text-sm text-green-600">+12% ce mois</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-gray-500 font-medium">Bénévoles</h3>
+                            <i data-feather="users" class="text-blue-600"></i>
+                        </div>
+                        <p class="text-3xl font-bold mb-2">156</p>
+                        <p class="text-sm text-green-600">+5 nouveaux</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-gray-500 font-medium">Projets actifs</h3>
+                            <i data-feather="clipboard" class="text-blue-600"></i>
+                        </div>
+                        <p class="text-3xl font-bold mb-2">8</p>
+                        <p class="text-sm text-gray-600">En cours</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-gray-500 font-medium">Messages</h3>
+                            <i data-feather="mail" class="text-blue-600"></i>
+                        </div>
+                        <p class="text-3xl font-bold mb-2">12</p>
+                        <p class="text-sm text-red-600">3 non lus</p>
+                    </div>
+                </div>
+                
+                <!-- Recent Donations -->
+                <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                    <div class="flex justify-between items-center mb-6">
+                        <h2 class="text-xl font-bold">Dons récents</h2>
+                        <a href="donations.html" class="text-blue-600 hover:underline">Voir tout</a>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead>
+                                <tr class="text-left text-gray-500 border-b">
+                                    <th class="pb-3">Donateur</th>
+                                    <th class="pb-3">Montant</th>
+                                    <th class="pb-3">Date</th>
+                                    <th class="pb-3">Méthode</th>
+                                    <th class="pb-3">Statut</th>
+                                    <th class="pb-3">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y">
+                                <tr>
+                                    <td class="py-4">Aminata Diallo</td>
+                                    <td class="py-4">150€</td>
+                                    <td class="py-4">15 Juin 2023</td>
+                                    <td class="py-4">Carte bancaire</td>
+                                    <td class="py-4"><span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Complété</span></td>
+                                    <td class="py-4">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i data-feather="eye" class="w-4 h-4"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4">Moussa Traoré</td>
+                                    <td class="py-4">50€</td>
+                                    <td class="py-4">14 Juin 2023</td>
+                                    <td class="py-4">PayPal</td>
+                                    <td class="py-4"><span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Complété</span></td>
+                                    <td class="py-4">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i data-feather="eye" class="w-4 h-4"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4">Bintou Coulibaly</td>
+                                    <td class="py-4">200€</td>
+                                    <td class="py-4">12 Juin 2023</td>
+                                    <td class="py-4">Virement</td>
+                                    <td class="py-4"><span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs">En attente</span></td>
+                                    <td class="py-4">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i data-feather="eye" class="w-4 h-4"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4">Kadiatou Diarra</td>
+                                    <td class="py-4">30€</td>
+                                    <td class="py-4">10 Juin 2023</td>
+                                    <td class="py-4">Carte bancaire</td>
+                                    <td class="py-4"><span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Complété</span></td>
+                                    <td class="py-4">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i data-feather="eye" class="w-4 h-4"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4">Cheick Traoré</td>
+                                    <td class="py-4">100€</td>
+                                    <td class="py-4">8 Juin 2023</td>
+                                    <td class="py-4">PayPal</td>
+                                    <td class="py-4"><span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Complété</span></td>
+                                    <td class="py-4">
+                                        <button class="text-blue-600 hover:text-blue-800">
+                                            <i data-feather="eye" class="w-4 h-4"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Recent Activities -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-xl font-bold">Activités récentes</h2>
+                            <a href="activities.html" class="text-blue-600 hover:underline">Voir tout</a>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-full mr-4">
+                                    <i data-feather="clipboard" class="text-blue-600 w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Nouveau projet éducatif ajouté</p>
+                                    <p class="text-sm text-gray-500">15 Juin 2023 - Par Aminata</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-2 rounded-full mr-4">
+                                    <i data-feather="check-circle" class="text-green-600 w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Mission médicale terminée</p>
+                                    <p class="text-sm text-gray-500">12 Juin 2023 - Par Dr. Keita</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-2 rounded-full mr-4">
+                                    <i data-feather="dollar-sign" class="text-purple-600 w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Nouveau don mensuel enregistré</p>
+                                    <p class="text-sm text-gray-500">10 Juin 2023 - Par Boubacar</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-2 rounded-full mr-4">
+                                    <i data-feather="user-plus" class="text-yellow-600 w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Nouveau bénévole ajouté</p>
+                                    <p class="text-sm text-gray-500">8 Juin 2023 - Par Moussa</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-red-100 p-2 rounded-full mr-4">
+                                    <i data-feather="alert-triangle" class="text-red-600 w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Besoin urgent de médicaments</p>
+                                    <p class="text-sm text-gray-500">5 Juin 2023 - Par Dr. Keita</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-md p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-xl font-bold">Dernières actualités</h2>
+                            <a href="news.html" class="text-blue-600 hover:underline">Voir tout</a>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <img src="http://static.photos/education/100x100/26" alt="École" class="w-16 h-16 rounded-lg object-cover mr-4">
+                                <div>
+                                    <h3 class="font-medium mb-1">Inauguration d'une nouvelle école</h3>
+                                    <p class="text-sm text-gray-500 mb-2">15 Juin 2023</p>
+                                    <div class="flex space-x-2">
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Modifier</a>
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Aperçu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <img src="http://static.photos/medical/100x100/27" alt="Mission médicale" class="w-16 h-16 rounded-lg object-cover mr-4">
+                                <div>
+                                    <h3 class="font-medium mb-1">Mission médicale réussie</h3>
+                                    <p class="text-sm text-gray-500 mb-2">12 Juin 2023</p>
+                                    <div class="flex space-x-2">
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Modifier</a>
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Aperçu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <img src="http://static.photos/agriculture/100x100/28" alt="Formation agricole" class="w-16 h-16 rounded-lg object-cover mr-4">
+                                <div>
+                                    <h3 class="font-medium mb-1">Formation aux techniques agricoles</h3>
+                                    <p class="text-sm text-gray-500 mb-2">18 Mai 2023</p>
+                                    <div class="flex space-x-2">
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Modifier</a>
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Aperçu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <img src="http://static.photos/construction/100x100/29" alt="Puits" class="w-16 h-16 rounded-lg object-cover mr-4">
+                                <div>
+                                    <h3 class="font-medium mb-1">Construction de puits</h3>
+                                    <p class="text-sm text-gray-500 mb-2">5 Mai 2023</p>
+                                    <div class="flex space-x-2">
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Modifier</a>
+                                        <a href="#" class="text-blue-600 text-sm hover:underline">Aperçu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <a href="news-add.html" class="inline-flex items-center text-blue-600 hover:text-blue-800">
+                                <i data-feather="plus" class="w-4 h-4 mr-2"></i> Ajouter une actualité
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="../components/admin-sidebar.js"></script>
+    <script src="../components/admin-navbar.js"></script>
+    <script src="../script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

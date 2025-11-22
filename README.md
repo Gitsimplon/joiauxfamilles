@@ -1,59 +1,126 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+Entraide Hooralayn — Version Réinventée
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+> 🐳 *Un projet humanitaire dédié à offrir un avenir meilleur aux orphelins et aux familles vulnérables.*
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ À propos du projet
 
-## Learning Laravel
+**Entraide Hooralayn Reimagined** est une initiative numérique visant à moderniser et renforcer les outils utilisés pour soutenir les enfants orphelins, les familles en difficulté et les communautés vulnérables.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Cette plateforme permet de :
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* 🏠 Gérer les activités d’un orphelinat
+* 🎒 Suivre la scolarité et les besoins des enfants
+* 🍽️ Coordonner les actions humanitaires
+* 💖 Faciliter les dons et parrainages
+* 📊 Mesurer et communiquer l’impact des actions menées
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🎯 Objectifs
 
-### Premium Partners
+* Offrir une **interface moderne, simple et accessible**
+* Assurer une **gestion transparente** des ressources et des dons
+* Centraliser toutes les données essentielles
+* Faciliter la collaboration entre bénévoles, responsables et donateurs
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🛠️ Technologies utilisées
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* **Frontend** : HTML, CSS, JavaScript
+* **Backend** : Laravel / PHP
+* **Mobile** : Flutter
+* **Base de données** : MySQL
+* **Intégration** : API REST
+* **Versioning** : Git & GitHub
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📌 Fonctionnalités principales
 
-## Security Vulnerabilities
+* ✔️ Gestion des profils d’enfants
+* ✔️ Suivi santé, scolarité et besoins
+* ✔️ Tableau de bord d’administration
+* ✔️ Suivi des dons et contributions
+* ✔️ Pages publiques pour la sensibilisation
+* ✔️ Statistiques & rapports
+* ✔️ Multilingue (FR / EN)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 🚀 Installation & Déploiement
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Cloner le projet :**
+
+```bash
+git clone https://github.com/Gitsimplon/joiauxfamilles.git
+```
+
+**Installer les dépendances (Laravel) :**
+
+```bash
+composer install
+```
+
+**Installer les dépendances frontend (si nécessaire) :**
+
+```bash
+npm install && npm run dev
+```
+
+Configurer ensuite votre fichier :
+
+```
+.env
+```
+
+---
+
+## 💞 Contribution
+
+Les contributions sont les bienvenues !
+
+1. Fork du repository
+2. Création d’une branche
+
+   ```bash
+   git checkout -b feature/ma-feature
+   ```
+3. Commit des modifications
+
+   ```bash
+   git commit -m "Ajout d'une nouvelle fonctionnalité"
+   ```
+4. Push
+
+   ```bash
+   git push origin feature/ma-feature
+   ```
+5. Ouvrir une Pull Request
+
+---
+
+## 🌱 Licence
+
+Ce projet est disponible sous licence **MIT**.
+
+---
+
+## 💌 Contact
+
+📧 **Email** : [contact@hooralayn.org](mailto:contact@hooralayn.org)
+🌐 **Site web** : [https://entraidehooralayn.org](https://entraidehooralayn.org)
+💝 *Ensemble, construisons un avenir meilleur.*
+
+---
+
+## 🏷️ Tags
+
+`Orphelin` · `Humanitaire` · `Solidarité` · `Laravel` · `Flutter`
+
+---

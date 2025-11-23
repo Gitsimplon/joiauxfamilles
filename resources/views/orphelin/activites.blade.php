@@ -30,7 +30,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="activity-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition" data-category="education">
-                    <img src="http://static.photos/education/640x360/6" alt="Soutien scolaire" class="w-full h-48 object-cover">
+                    <img src="{{ asset('imgs/classe.jpeg')}}" alt="Soutien scolaire" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-3">Éducation</span>
                         <h3 class="text-xl font-semibold mb-3">Soutien scolaire</h3>
@@ -42,7 +42,7 @@
                 </div>
                 
                 <div class="activity-card bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition" data-category="sante">
-                    <img src="http://static.photos/medical/640x360/7" alt="Campagne médicale" class="w-full h-48 object-cover">
+                    <img src="{{ asset('imgs/dortoire.jpeg')}}" alt="Campagne médicale" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <span class="inline-block px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-3">Santé</span>
                         <h3 class="text-xl font-semibold mb-3">Campagne médicale</h3>

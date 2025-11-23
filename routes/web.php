@@ -26,3 +26,7 @@ Route::get('/apropos', function () {
 Route::get('/admin', function () {
     return view('orphelin.admin.dashboard');
 });
+
+Route::get('/news-add', function () {
+    return view('orphelin.news-add');
+});
